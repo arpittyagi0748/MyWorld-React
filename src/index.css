@@ -1,13 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+:root {
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+.login-main-div {
+  width: 90vw;
+  height: 88vh;
+  margin: 0 auto;
+  text-align: center;
+}
+.login-form-design {
+  width: 50%;
+  margin: 5rem auto;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow-3);
+}
+.single-form {
+  margin-top: 2rem;
+}
+.btn {
+  width: 100%;
+  color: blue  !important;
+}
+.btn :hover{
+  width: 100%;
+  color: white  !important;
+}
+.image-center{
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 8rem;
+}
+.navbar-brand{
+  color: white !important; 
+}
+.navbar-brand:hover{
+  color: white !important;
+}
+.nav-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nav-div{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.div-image-size{
+  width: 100% ;
+  height: 80vh !important;
+  text-align: center;
+}
+.logistics-main{
+  width: 85vw;
+  margin: 2rem auto;
+}
+.grid-4{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}
+.footer-single-el{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.footer-image{
+    height: 17rem;
+    width: 100%;
+}
+.about-secondary-div{
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+}
+.about-heading{
+  position: absolute;
+  top: 25%;
+  left: 6%;
+  color: white;
+}
+.grid-2{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  text-align: start;
+  column-gap: 4rem;
+}
+table{
+  margin-bottom: 200px !important;
+}
+body{
+  overflow-x: hidden;
+}
+.input-div{
+  margin-bottom: 1.5rem !important;
 }
